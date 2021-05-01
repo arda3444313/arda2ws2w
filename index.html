@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="pagination">
+    <a href=""><i class="fas fa-chevron-left"></i></a>
+    <a href="/eutrthd.html">EU TRT HD</a>
+    <a href="/eustartvhd.html">EU STAR TV HD</a>
+    <a href="/eutv8hd.html">EU TV8 HD</a>
+    <a href="/eukanal7hd.html">EU KANAL 7 HD</a>
+    <a href="/eudmaxtvhd.html">EU DMAX TV HD</a>
+    <a href="/eutlchd.html">EU TLC HD</a>
+    <a href="/index2.html"><i class="fas fa-chevron-right"></i></a>
+    <div class="bar"></div>
+  </div>
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+
+  <script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+  </script>
+</body>
+</html>
